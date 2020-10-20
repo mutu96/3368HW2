@@ -1,0 +1,54 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <HBox>
+
+        <HBox>
+            <VBox>
+                <JFXButton fx:id="createDB" text="Create Database" prefWidth="100"/>
+
+                <JFXButton fx:id="populate" text="Populate Database" prefWidth="100"/>
+
+                <children>
+
+
+                <HBox>
+
+
+                <Label  text="Filteration Options:" textFill="crimson"/>
+
+                </HBox>
+                </children>
+
+                <JFXButton fx:id="filter" text="MALE PATIENTS" prefWidth="100"/>
+                <JFXButton fx:id="female" text="FEMALE PATIENTSr" prefWidth="100"/>
+                <JFXButton fx:id="bloodtype" text="BLOODTYPE A+" prefWidth="100" />
+
+                <JFXButton fx:id="delete" text="delete" />
+            </VBox>
+        </HBox>
+        <VBox>
+            <JFXListView fx:id="list" prefWidth="600" prefHeight="600"/>
+        </VBox>
+            <JFXListView fx:id="list2" prefWidth="600" prefHeight="600"/>
+        <VBox>
+
+        </VBox>
+
+
+    </HBox>
+</GridPane>
